@@ -26,56 +26,64 @@ def suma(a, b):
     Realiza una suma y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a + b)
+    
 
 def resta(a, b):
     """
     Realiza una resta y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a - b)
+    
 
 def multiplicacion(a, b):
     """
     Realiza una multiplicación y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a * b)
+    
 
 def division(a, b):
     """
     Realiza una división y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a / b)
+    
 
 def division_entera(a, b):
     """
     Realiza una división entera y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a // b)
+    
 
 def modulo(a, b):
     """
     Calcula el módulo y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (a % b)
+    
 
 def potencia(base, exponente):
     """
     Calcula la potencia y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return (base ** exponente)
+    
 
 def operacion_combinada(a, b, c, d):
     """
     Realiza la operación (a + b) * c - d y devuelve el resultado.
     """
     # Tu código aquí
-    pass
+    return ((a + b) * c - d)
+    
 
 def verificar_implementacion():
     puntuacion = 0

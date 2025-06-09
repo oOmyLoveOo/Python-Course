@@ -20,53 +20,53 @@ def operacion_and():
     """
     Completa la operación para que retorne True solo si ambos valores son True.
     """
-    return True ___ True
+    return True and True
 
 def operacion_or():
     """
     Completa la operación para que retorne True si al menos uno de los valores es True.
     """
-    return False ___ True
+    return False or True
 
 def operacion_not():
     """
     Completa la operación para que invierta el valor booleano dado.
     """
-    return ___ False
+    return not False
 
 def combinacion_and_or():
     """
     Completa la operación para que retorne True si (a y b) o c son True.
     """
     a, b, c = True, False, True
-    return (a ___ b) ___ c
+    return (a and b) or c
 
 def combinacion_not_and():
     """
     Completa la operación para que retorne True si a es True y b no es True.
     """
     a, b = True, False
-    return a ___ (___ b)
+    return a and (not b)
 
 def tres_condiciones():
     """
     Completa la operación para que retorne True solo si las tres condiciones son True.
     """
-    return True ___ True ___ True
+    return True and True and True
 
 def al_menos_dos_true():
     """
     Completa la operación para que retorne True si al menos dos de las tres condiciones son True.
     """
     a, b, c = True, False, True
-    return (a ___ b) ___ (b ___ c) ___ (a ___ c)
+    return (a and b) or (b and c) or (a and c)
 
 def exactamente_dos_true():
     """
     Completa la operación para que retorne True si exactamente dos de las tres condiciones son True.
     """
     a, b, c = True, False, True
-    return (a ___ b ___ (___c)) ___ (a ___ c ___ (___b)) ___ (b ___ c ___ (___a))
+    return (a and b and (not c)) or (a and c and (not b)) or (b and c and (not a))
 
 # Función de verificación
 def verificar_implementacion():

@@ -28,35 +28,39 @@ import math
 
 def es_entero(numero):
     # Implementa esta función para verificar si un número es entero
-    pass
+    return isinstance(numero, int)
+    print(type(numero))
 
 def suma_flotantes(a, b):
     # Implementa esta función para sumar dos números flotantes
-    pass
+    sum = a + b
+    return sum
 
 def division_entera_y_resto(a, b):
     # Implementa esta función para retornar la división entera y el resto
-    pass
+    return a // b, a % b
 
 def formato_numero_grande(numero):
     # Implementa esta función para dar formato legible a un número grande
-    pass
+    return f"{numero:_}"
 
 def asignacion_multiple():
     # Implementa esta función para asignar múltiples variables en una línea
-    pass
+    return 1, 2, 3
 
 def operacion_enteros(a, b):
     # Implementa esta función para realizar la operación a * b + 10
-    pass
+    return (a * b) + 10
 
 def conversion_tipos(numero_str):
     # Implementa esta función para convertir entre tipos numéricos
-    pass
+    floatNum = float(numero_str)
+    intNum = int(floatNum)
+    return  intNum, floatNum
 
 def redondeo_y_absoluto(numero):
     # Implementa esta función para redondear y obtener el valor absoluto
-    pass
+    return round(numero), abs(numero)
 
 def verificar_implementacion():
     puntuacion = 0

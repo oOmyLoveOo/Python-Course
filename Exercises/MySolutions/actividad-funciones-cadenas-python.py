@@ -29,7 +29,7 @@ def formatear_nombre(nombre, apellido, edad):
     Formato esperado: "Hola, me llamo {nombre} {apellido} y tengo {edad} años."
     """
     # Tu código aquí
-    pass
+    return (f"Hola, me llamo {nombre} {apellido} y tengo {edad} años.")
 
 def limpiar_y_capitalizar(texto):
     """
@@ -38,7 +38,7 @@ def limpiar_y_capitalizar(texto):
     Pista: Combina los métodos strip() y capitalize().
     """
     # Tu código aquí
-    pass
+    return texto.strip().capitalize()
 
 def dividir_y_unir(frase, separador):
     """
@@ -47,7 +47,8 @@ def dividir_y_unir(frase, separador):
     Pista: Usa split() para dividir y join() para unir.
     """
     # Tu código aquí
-    pass
+    palabras = frase.split()  # Divide la frase en palabras
+    return separador.join(palabras)  # Une las palabras usando el separador
 
 def encontrar_subcadena(texto, subcadena):
     """
@@ -57,7 +58,8 @@ def encontrar_subcadena(texto, subcadena):
     Pista: El método find() devuelve -1 si la subcadena no se encuentra.
     """
     # Tu código aquí
-    pass
+    position = texto.find(subcadena)
+    return position
 
 def verificar_prefijo_sufijo(texto, prefijo, sufijo):
     """
@@ -68,7 +70,9 @@ def verificar_prefijo_sufijo(texto, prefijo, sufijo):
     Formato esperado: "Comienza con {prefijo}: {True/False}, Termina con {sufijo}: {True/False}"
     """
     # Tu código aquí
-    pass
+    comienza = texto.startswith(prefijo)
+    termina = texto.endswith(sufijo)
+    return f"Comienza con {prefijo}: {comienza}, Termina con {sufijo}: {termina}"
 
 def contar_y_reemplazar(texto, palabra, reemplazo):
     """
@@ -78,7 +82,9 @@ def contar_y_reemplazar(texto, palabra, reemplazo):
     Formato esperado: "La palabra '{palabra}' aparece {n} veces. Texto modificado: '{nuevo_texto}'"
     """
     # Tu código aquí
-    pass
+    n = texto.count(palabra)
+    nuevo_texto = texto.replace(palabra, reemplazo)
+    return f"La palabra '{palabra}' aparece {n} veces. Texto modificado: '{nuevo_texto}'"
 
 def procesar_url(url):
     """
@@ -87,7 +93,7 @@ def procesar_url(url):
     Pista: Investiga los métodos removeprefix() y removesuffix().
     """
     # Tu código aquí
-    pass
+    return url.removeprefix("https://").removesuffix(".com")
 
 def estilo_titulo(frase):
     """
@@ -96,7 +102,7 @@ def estilo_titulo(frase):
     Pista: El método title() capitaliza la primera letra de cada palabra.
     """
     # Tu código aquí
-    pass
+    return frase.title()
 
 # Función de verificación
 def verificar_implementacion():
@@ -140,7 +146,7 @@ def verificar_implementacion():
 
     # Prueba 5: verificar_prefijo_sufijo
     try:
-        assert verificar_prefijo_sufijo("PyThOnPy", "Py", "py") == "Comienza con Py: True, Termina con py: True"
+        assert verificar_prefijo_sufijo("PyThOnpy", "Py", "py") == "Comienza con Py: True, Termina con py: True"
         print("✅ Prueba 5 pasada: verificar_prefijo_sufijo funciona correctamente")
         puntuacion += 1
     except:

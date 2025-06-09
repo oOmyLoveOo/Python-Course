@@ -18,7 +18,7 @@ def operacion_numerica():
     El resultado debe ser 7.5
     """
     a = 5
-    b = ___
+    b = 2.5
     return a + b
 
 def formateo_cadena():
@@ -28,7 +28,7 @@ def formateo_cadena():
     """
     nombre = "Juan"
     edad = 25
-    return f"___ {nombre}. Tienes ___ años."
+    return f"Hola {nombre}. Tienes 25 años."
 
 def manipulacion_cadena():
     """
@@ -36,7 +36,7 @@ def manipulacion_cadena():
     Debe retornar "python es genial"
     """
     texto = "  Python Es GENIAL  "
-    return texto.___().___().___()
+    return texto.strip().lower().___()
 
 def operacion_booleana():
     """
@@ -45,7 +45,7 @@ def operacion_booleana():
     """
     a = True
     b = False
-    return a ___ (not b)
+    return a and (not b)
 
 def conteo_y_reemplazo():
     """
@@ -53,8 +53,8 @@ def conteo_y_reemplazo():
     Debe retornar (3, "Hola python")
     """
     texto = "Hola mundo, abraza al mundo"
-    conteo = texto.___('a')
-    nuevo_texto = texto.___('mundo', ___)
+    conteo = texto.count('a')
+    nuevo_texto = texto.replace('mundo', 'python')
     return (conteo, nuevo_texto)
 
 def division_y_redondeo():
@@ -63,7 +63,7 @@ def division_y_redondeo():
     Debe retornar 3.33
     """
     resultado = 10 / 3
-    return round(___, ___)
+    return round(resultado, 2)
 
 def encontrar_subcadena():
     """
@@ -71,7 +71,7 @@ def encontrar_subcadena():
     Si 'python' no está en la cadena, debe retornar -1.
     """
     texto = "Aprendiendo programación con python"
-    return texto.___(___) if ___ in texto else ___
+    return texto.index('python') if 'python' in texto else -1
 
 def es_numero_par_y_positivo(numero):
     """
