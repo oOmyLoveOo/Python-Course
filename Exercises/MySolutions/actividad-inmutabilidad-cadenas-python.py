@@ -36,7 +36,7 @@ def cambiar_letra(palabra, indice, nueva_letra):
     Retorna la palabra modificada.
     """
     # Tu código aquí
-    pass
+    return palabra[:indice] + nueva_letra + palabra[indice + 1:]
 
 def agregar_exclamacion(frase):
     """
@@ -44,7 +44,7 @@ def agregar_exclamacion(frase):
     Retorna la frase modificada.
     """
     # Tu código aquí
-    pass
+    return frase + "!"
 
 def quitar_espacios(texto):
     """
@@ -52,7 +52,7 @@ def quitar_espacios(texto):
     Retorna el texto modificado.
     """
     # Tu código aquí
-    pass
+    return texto.strip().replace(" ", "")
 
 def invertir_cadena(cadena):
     """
@@ -60,7 +60,10 @@ def invertir_cadena(cadena):
     Retorna la cadena invertida.
     """
     # Tu código aquí
-    pass
+    invertida = ""
+    for i in range(len(cadena) -1, -1, -1):
+        invertida += cadena[i]
+    return invertida
 
 def verificar_implementacion():
     puntuacion = 0

@@ -28,7 +28,7 @@ def formateo_cadena():
     """
     nombre = "Juan"
     edad = 25
-    return f"Hola {nombre}. Tienes 25 años."
+    return f"Hola, {nombre}. Tienes 25 años."
 
 def manipulacion_cadena():
     """
@@ -36,7 +36,7 @@ def manipulacion_cadena():
     Debe retornar "python es genial"
     """
     texto = "  Python Es GENIAL  "
-    return texto.strip().lower().___()
+    return texto.strip().lower()
 
 def operacion_booleana():
     """
@@ -78,9 +78,9 @@ def es_numero_par_y_positivo(numero):
     Verifica si el número es par y positivo.
     Debe retornar un booleano.
     """
-    es_par = numero % 2 == ___
-    es_positivo = numero > ___
-    return es_par ___ es_positivo
+    es_par = numero % 2 == 0
+    es_positivo = numero > 0
+    return es_par == es_positivo
 
 def unir_y_dividir_cadenas():
     """
@@ -88,8 +88,8 @@ def unir_y_dividir_cadenas():
     Debe retornar ["python", "es", "divertido"]
     """
     palabras = ["python", "es", "divertido"]
-    unidas = ___.___(palabras)
-    return unidas.___(___) 
+    unidas = "-".join(palabras)
+    return unidas.split("-") 
 
 def eliminar_prefijo_y_sufijo():
     """
@@ -97,7 +97,7 @@ def eliminar_prefijo_y_sufijo():
     Debe retornar "th"
     """
     palabra = "python"
-    return palabra.___("py").___("on")
+    return palabra.removeprefix("py").removesuffix("on")
 
 # Función de verificación
 def verificar_implementacion():

@@ -33,7 +33,7 @@ def es_entero(numero):
 
 def suma_flotantes(a, b):
     # Implementa esta función para sumar dos números flotantes
-    sum = a + b
+    sum = float(a) + float(b)
     return sum
 
 def division_entera_y_resto(a, b):

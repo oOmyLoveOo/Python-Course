@@ -22,41 +22,41 @@ NOMBRE_CURSO = "PYTHON PROGRAMMING"
 ES_LENGUAJE_COMPILADO = False
 
 # Crea tus propias constantes aquí (al menos 3)
-___ = 299792458  # Velocidad de la luz en m/s
-___ = 1.602176634e-19  # Carga del electrón en coulombs
-___ = -273.15  # Cero absoluto en grados Celsius
+LIGHT = 299792458  # Velocidad de la luz en m/s
+COULOMBS = 1.602176634e-19  # Carga del electrón en coulombs
+CELSIUS = -273.15  # Cero absoluto en grados Celsius
 
 def calcular_area_circulo(radio):
     """
     Calcula el área de un círculo usando la constante PI.
     Fórmula: área = PI * radio^2
     """
-    return ___ * radio ** 2
+    return PI * radio ** 2
 
 def calcular_energia_potencial(masa, altura):
     """
     Calcula la energía potencial usando la constante GRAVEDAD.
     Fórmula: energía = masa * GRAVEDAD * altura
     """
-    return ___ * ___ * altura
+    return masa * GRAVEDAD * altura
 
 def obtener_dias_en_semanas(semanas):
     """
     Calcula el número total de días en un número dado de semanas.
     """
-    return semanas * ___
+    return semanas * DIAS_SEMANA
 
 def formatear_nombre_curso():
     """
     Formatea el nombre del curso en minúsculas y reemplaza espacios por guiones bajos.
     """
-    return ___.lower().___(' ', '_')
+    return NOMBRE_CURSO.lower().replace(' ', '_')
 
 def es_lenguaje_interpretado():
     """
     Retorna el opuesto del valor de ES_LENGUAJE_COMPILADO.
     """
-    return ___ ___
+    return not ES_LENGUAJE_COMPILADO
 
 def calcular_energia_electron(velocidad):
     """
@@ -65,7 +65,7 @@ def calcular_energia_electron(velocidad):
     Fórmula: E = (1/2) * m * v^2
     """
     masa_electron = 9.1093837e-31  # kg
-    return 0.5 * masa_electron * velocidad**2 / ___
+    return 0.5 * masa_electron * velocidad**2
 
 def convertir_celsius_a_kelvin(temp_celsius):
     """
@@ -73,7 +73,7 @@ def convertir_celsius_a_kelvin(temp_celsius):
     Utiliza la constante que has creado para el cero absoluto.
     Fórmula: K = C - cero_absoluto
     """
-    return temp_celsius - ___
+    return temp_celsius - CELSIUS
 
 def es_nombre_constante_valido(nombre):
     """
