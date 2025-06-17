@@ -1,0 +1,9 @@
+{
+  "ventas_totales": 9.0,
+  "mejor_vendedor": "Juan",
+  "ventas_por_producto": {
+    "Laptop": 3,
+    "Tel\u00e9fono": 5,
+    "Tablet": 1
+  }
+}
